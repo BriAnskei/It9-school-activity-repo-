@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 5 - Coin Counter</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      .card {
+        border-radius: 25px;
+      }
+      .coin-display {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="d-flex justify-content-center">
+      <div class="card mt-5 w-50 shadow-lg p-3">
+        <span class="badge rounded-pill text-bg-primary">Level 5</span>
+        <h5 class="card-title">Coin Counter Quest</h5>
+
+        <div class="coin-display my-3" id="coinDisplay">0</div>
+
+        <div class="d-flex justify-content-evenly gap-3">
+          <button id="increaseBtn" class="btn btn-success w-50">+</button>
+          <button id="decreaseBtn" class="btn btn-danger w-50">-</button>
+        </div>
+
+        <div class="d-flex justify-content-evenly gap-3 mt-3">
+          <button
+            class="btn btn-secondary w-50"
+            onclick="location.href = 'level4.html'"
+          >
+            Back
+          </button>
+
+          <button
+            class="btn btn-dark w-50"
+            onclick="location.href = 'level6.html'"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="level5Script.js"></script>
+  </body>
+</html>
